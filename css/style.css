@@ -9,8 +9,11 @@ html {
 /*Navbar*/
 
  @media screen and (max-width:992px) {
-    button.responsiveButton {
+   .navbar .container button.responsiveButton {
         display: block;
+    }
+    .navbar-nav{
+        display: none;
     }
 } 
 
