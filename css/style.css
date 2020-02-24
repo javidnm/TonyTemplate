@@ -1,0 +1,607 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Navbar*/
+
+ @media screen and (max-width:992px) {
+    button.responsiveButton {
+        display: block;
+    }
+} 
+
+.responsiveButton {
+    width: 40px;
+    height: 40px;
+    background-color: #d9832e;
+    position: relative;
+    display: none;
+}
+
+.responsiveButton span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 25px;
+    height: 2px;
+    margin: auto;
+    box-shadow: 0px -8px 0 0px currentColor, 0px 8px 0 0px currentColor;
+    background: #ffffff;
+    color: #ffffff;
+}
+
+.navbar {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+}
+
+a.navbar-brand {
+    font-weight: 600;
+    font-size: 24px;
+    color: black;
+}
+
+.nav-link {
+    font-size: 0.8rem;
+    color: black;
+    font-weight: 500;
+}
+
+.nav-link.active {
+    color: #d9832e;
+}
+
+.nav-link:hover {
+    color: #d9832e;
+}
+
+/*First page*/
+
+#firstPage {
+    background-image: url(../img/home-banner-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-color: #000000b5;
+    background-blend-mode: color;
+    display: flex;
+    align-items: center;
+}
+
+#firstPage .centerText {
+    color: white;
+}
+
+.centerText, .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list {
+    color: white;
+}
+
+.list>ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.list>ul>li {
+    background: rgba(255, 255, 255, 0.13);
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 30px;
+    letter-spacing: 1px;
+}
+
+/*About me*/
+
+#aboutMe {
+    background-color: #eaedf2;
+}
+
+#aboutMe img {
+    max-width: 100%;
+}
+
+#aboutMe .aboutImg {
+    border: 14px solid #ffffff;
+    border-radius: 5px;
+    padding: 0;
+    position: relative;
+}
+
+#aboutMe .icons {
+    position: absolute;
+    top: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    background-color: white;
+}
+
+#aboutMe .icons a {
+    text-decoration: none;
+    border: 1px solid #d9832e;
+    background-color: #d9832e;
+    color: white;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#aboutMe .icons a:hover {
+    background-color: black;
+    border: 1px solid black;
+}
+
+#aboutMe .aboutText h4 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#aboutMe .aboutText h6 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#aboutMe .aboutText p {
+    color: gray;
+}
+
+#aboutMe .media {
+    padding: 6px 0;
+    line-height: normal;
+}
+
+#aboutMe .media label {
+    margin: 0;
+    color: #090a0c;
+    font-weight: 500;
+    font-size: 17px;
+    flex: 1;
+    border-right: 1px solid #c1c1c1;
+    max-width: 90px;
+}
+
+#aboutMe .media p {
+    margin-bottom: 0;
+    padding-left: 15px;
+    font-size: 17px;
+}
+
+.downloadButton {
+    width: 150px;
+    height: 47px;
+    background-color: #d9832e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+}
+
+.downloadButton a {
+    color: white;
+    text-decoration: none;
+    font-family: "poppins";
+}
+
+/*Skill*/
+
+#mySkill .skill .skillPercent {
+    width: 100%;
+    height: 5px;
+    background-color: #eaedf2;
+    position: relative;
+}
+
+#mySkill .skill>h6.html5::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    background-color: #eaedf2;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+}
+
+#mySkill .skill>h6.html5::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    background-color: #d9832e;
+    width: 92%;
+    height: 5px;
+    bottom: 0;
+}
+
+#mySkill .skill>h6.wordPress::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    background-color: #eaedf2;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+}
+
+#mySkill .skill>h6.wordPress::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    background-color: #d9832e;
+    width: 75%;
+    height: 5px;
+    bottom: 0;
+}
+
+#mySkill .skill>h6.magento::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    background-color: #eaedf2;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+}
+
+#mySkill .skill>h6.magento::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    background-color: #d9832e;
+    width: 86%;
+    height: 5px;
+    bottom: 0;
+}
+
+#mySkill .skill>h6.uiux::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    background-color: #eaedf2;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+}
+
+#mySkill .skill>h6.uiux::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    background-color: #d9832e;
+    width: 88%;
+    height: 5px;
+    bottom: 0;
+}
+
+#mySkill .item {
+    height: 96px;
+    padding: 18px 15px;
+    border-radius: 5px;
+    background: #ffffff;
+    border: 2px solid #d9832e;
+    box-shadow: 0px 30px 60px 0px rgba(38, 59, 94, 0.1)
+}
+
+#mySkill .item .itemInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mySkill .item i {
+    color: #d9832e;
+    font-size: 45px;
+    margin-right: 25px;
+}
+
+/*My services*/
+
+#services {
+    background-color: #eaedf2
+}
+
+h2.myServices, h2.about, h2.mySkill, h2.latestWorks, h2.testimonilas, h2.latestBlogs, h2.touch {
+    font-weight: 700;
+    font-size: 35px;
+    margin: 0 0 10px;
+    position: relative;
+    display: inline-block;
+    padding: 0 0 10px;
+}
+
+h2.myServices::after, h2.about::after, h2.mySkill::after, h2.latestWorks::after, h2.testimonilas::after, h2.latestBlogs::after, h2.touch::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: #d9832e;
+    width: 50px;
+}
+
+.lead {
+    font-family: "Poppins";
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: gray
+}
+
+.box {
+    background-color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+}
+
+.box .icon {
+    width: 80px;
+    height: 80px;
+    border: 2px dotted #d9832e;
+    border-radius: 50%;
+}
+
+.box .icon i {
+    color: #d9832e;
+    font-size: 30px;
+}
+
+.box .iconText p:nth-child(2) {
+    color: gray
+}
+
+.box:hover i {
+    color: white;
+}
+
+.box:hover {
+    background-color: #d9832e;
+    color: white;
+    margin-top: -10px;
+}
+
+.box:hover .icon {
+    color: white;
+    border: 2px dotted white
+}
+
+.box:hover .iconText p:nth-child(2) {
+    color: rgba(255, 255, 255, 0.6)
+}
+
+/*Latest work*/
+
+#latestWork .item .img img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+#latestWork .item .img {
+    transition: ease all 0.35s;
+}
+
+#latestWork .item {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#latestWork .item .imgInfo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(9, 10, 12, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#latestWork .item .imgInfo>h5, #latestWork .item .imgInfo>p {
+    color: white;
+}
+
+#latestWork .item .imgInfo>p {
+    text-align: center;
+}
+
+#latestWork .item .imgInfo {
+    display: none;
+}
+
+#latestWork .item:hover .imgInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#latestWork .item:hover .img {
+    transform: scale(1.11);
+}
+
+/*Testimonilas*/
+
+#testimonilas {
+    background-color: #eaedf2;
+}
+
+#testimonilas .media {
+    background: #ffffff;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #edd;
+}
+
+#testimonilas .mediaBody {
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+#testimonilas .media img {
+    max-width: 100%;
+    border-radius: 50% 0 50% 50%;
+}
+
+/*Blog*/
+
+#blog .blogItem {
+    cursor: pointer;
+}
+
+#blog .blogItem img {
+    max-width: 100%;
+}
+
+#blog .blogInfo {
+    position: relative;
+    width: 95%;
+    background: #ffffff;
+    margin: -30px 10px 0;
+    position: relative;
+    padding: 18px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.19);
+}
+
+#blog .blogItem .date {
+    background: #d9832e;
+    font-size: 12px;
+    position: absolute;
+    top: -27px;
+    padding: 4px 20px;
+    color: #ffffff;
+    border-radius: 0;
+    left: 0px;
+}
+
+#blog .blogItem .design {
+    background: #ffffff;
+    padding: 0px 12px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+
+#blog .blogItem .blogInfo h5 {
+    font-size: 17px;
+}
+
+#blog .blogItem .blogInfo h5 a {
+    color: #090a0c;
+    text-decoration: none;
+}
+
+#blog .blogItem .blogInfo a.read {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #d9832e;
+    border-bottom: 2px solid #d9832e;
+}
+
+/*Contact*/
+
+#contact {
+    background-color: #eaedf2;
+}
+
+#contact .contactForm {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5%;
+}
+
+#contact form.contactForm input, #contact form.contactForm textarea {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    padding-left: 0;
+    box-shadow: none;
+    font-size: 14px;
+    outline: none;
+    width: 100%;
+    position: relative;
+}
+
+#contact form.contactForm input:focus, #contact form.contactForm textarea:focus {
+    border-bottom: 1px solid #d9832e;
+    transition: all 1s ease-in-out;
+    width: 100%;
+}
+
+#contact .sendButton {
+    background-color: #d9832e;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+}
+
+#contact .sendButton button {
+    color: white;
+}
+
+#contact .sendButton:hover {
+    background-color: black;
+}
+
+#contact .media {
+    background-color: white;
+    padding: 20px;
+}
+
+#contact .media .icon {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: #ffffff;
+    background: #d9832e;
+    font-size: 19px;
+    line-height: 40px;
+    margin-right: 20px;
+}
+
+#contact .media .mediaBody h6 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #090a0c;
+    margin-bottom: 8px;
+}
+
+footer {
+    background-color: black;
+    padding: 20px;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    margin-right: 17px;
+}
+
+footer a:hover {
+    color: white;
+}
